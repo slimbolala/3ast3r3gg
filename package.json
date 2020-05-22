@@ -1,0 +1,11 @@
+{
+    "name": "3ast3r3gg",
+    "version": "1.0.0",
+    "description": "Hopping down that bunny trail.",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
