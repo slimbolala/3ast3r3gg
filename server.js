@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require('express');
 const path = require('path');
+const opn = require('opn');
 const app = express();
 app.use(express.json());
 app.use(express.static("express"));
@@ -13,3 +14,4 @@ const server = http.createServer(app);
 const port = 3000;
 server.listen(process.env.PORT || port);
 console.debug('Server listening on port ' + port);
+opn('http://localhost:' + port);
